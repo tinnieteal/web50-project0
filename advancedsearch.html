@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <ul class="flexbox" style="margin:0; padding: 0">
+            <li style="color:#4285F4">G</li>
+            <li style="color:#EA4335">o</li>
+            <li style="color:#FBBC05">o</li>
+            <li style="color:#4285F4">g</li>
+            <li style="color:#34A853">l</li>
+            <li style="color:#EA4335">e</li>
+        </ul>
+    </div>
+    <div class="subtitle"> Advanced Search</div>
+    <div class="line"> </div>
+    <div style="margin-left: 38px">
+        <h3><span style="font-weight:normal">Find pages with...</h3>
+        <form method="GET" id="search-form" action="https://google.com/search" style="display: table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>all these words: </td>
+                        <td><input class="searchspace" type="text" name="as_q"></td>
+                    </tr>
+                    <tr>
+                        <td>this exact word or phrase: </td>
+                        <td><input class="searchspace" type="text" name="as_epq"></td>
+                    </tr>
+                    <tr>
+                        <td>any of these words:</td>
+                        <td><input class="searchspace" type="text" name="as_epq"></td>
+                    </tr>
+                    <tr>
+                        <td>none of these words: </td>
+                        <td><input class="searchspace" type="text" name="as_eq"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="display: flex; justify-content: flex-end">
+                <button class="submit" type="submit" form="search-form">Advanced Search</button>
+            </div>
+                <div>
+        </form>
+    </div>
+</body>
