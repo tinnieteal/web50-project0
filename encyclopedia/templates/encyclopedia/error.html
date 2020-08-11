@@ -1,0 +1,15 @@
+{% extends "encyclopedia/header.html" %}
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block body %}
+{% include 'encyclopedia/topbar.html' %}
+
+<div class="alert alert-danger error-message" role="alert">
+  <h4 class="alert-heading">{{error_message}}</h4>
+  <p>Aww...it seems that you have searched for something outside of our wiki library. <br>
+     Try to search again, or <a id="create" href="/create">create your own wiki page :)</a> </p>
+</div>
+{% endblock %}
+

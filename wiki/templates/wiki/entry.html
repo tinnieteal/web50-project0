@@ -1,0 +1,11 @@
+{% extends "encyclopedia/header.html" %}
+{% block title %}
+{{title}} - wikipedia
+{% endblock %}
+{% block body %}
+{% include 'encyclopedia/topbar.html' %}
+<div class="display">
+    </h6>{{ details | safe }}</h6>
+    <a href="{{ title }}/edit/">Edit</a>
+</div>
+{% endblock %}

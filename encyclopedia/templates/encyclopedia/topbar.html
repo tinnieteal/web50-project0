@@ -1,0 +1,16 @@
+{% block content %}
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+            <div class="navbar-nav d-flex justify-content-start">
+                <a class="navbar-brand" href="#">WIKI</a>
+                <a class="nav-item nav-link p-2" href="{% url 'index' %}">Home</a>
+                <a class="nav-item nav-link p-2" href="/create">Create</a>
+                <a class="nav-item nav-link p-2" href="/random">Random</a>
+            </div>
+            <form class="form-inline" action="/">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+</nav>
+
+{% endblock %}

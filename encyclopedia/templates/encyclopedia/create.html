@@ -1,0 +1,24 @@
+{% extends "encyclopedia/header.html" %}
+{% block title %}
+Encyclopedia
+{% endblock %}
+{% block body %}
+{% include 'encyclopedia/topbar.html' %}
+<div class="display form-container">
+    <div class="alert alert-primary page-title" role="alert">
+	Create entry:
+	</div>
+    <form action="/create/" method="POST">
+        {% csrf_token %}
+        <div class="form-group" >
+            <input class="form-control" type="text" name="title" placeholder="Title">
+        </div>
+         <div class="form-group">
+            <textarea class="form-control" type="text" name="details" placeholder="Details" rows="10"></textarea>
+        </div>       
+        <button class="btn btn-primary" type="submit">
+            save
+        </button>
+    </form>
+</div>
+{% endblock %}
